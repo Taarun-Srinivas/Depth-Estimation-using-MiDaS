@@ -3,7 +3,6 @@ import torch
 import matplotlib.pyplot as plt
 
 midas = torch.hub.load('intel-isl/MiDaS','MiDaS_small')
-midas.to('cpu')
 midas.eval()
 
 transforms = torch.hub.load('intel-isl/MiDaS',
